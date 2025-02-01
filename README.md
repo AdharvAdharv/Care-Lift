@@ -18,5 +18,5 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/carelift.git
+git clone git@github.com:AdharvAdharv/Care-Lift.git
 cd carelift
