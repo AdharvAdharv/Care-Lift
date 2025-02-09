@@ -9,16 +9,24 @@
 </head>
 <body>
 
-    <nav class="w-auto h-[90px] bg-slate-400 flex justify-between pl-12 ">
-        <img src="./Assets/logo.jpg" alt="logo">
-        <div class="text-white font-black text-2xl my-auto">
-        <a class="mr-[50px]" href="HomePage.html">Home</a>
-        <a class="mr-[50px]" href="Fundraising 1.html">Start a Campaign</a>
-        <a class="mr-[50px]" href="How it works.html">How it Works</a>
-        <a class="mr-[50px]" href="AboutUs.html">About Us</a>
-        <a class="mr-[50px]" href="Login.html">Login</a>
-       </div>
-</nav>
+    <nav class="w-full bg-slate-400 px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between">
+        <!-- Logo -->
+        <div class="w-full md:w-auto flex justify-between items-center">
+            <img src="./Assets/logo.jpg" alt="logo" class="h-12">
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl">&#9776;</button>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div id="menu" class="hidden md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
+            <a href="HomePage.html" class="text-white text-lg">Home</a>
+            <a href="Fundraising 1.html" class="text-white text-lg">Start a Campaign</a>
+            <a href="How it works.html" class="text-white text-lg">How it Works</a>
+            <a href="AboutUs.html" class="text-white text-lg">About Us</a>
+            <a href="Login.html" class="text-white text-lg">Login</a>
+            
+        </div>
+    </nav>
 
 <div class="h-[600px] bg-gradient-to-t from-blue-600 to-white w-full  ">
     
@@ -28,7 +36,7 @@
     </div>
      
     <!-- left and right side of the body -->
-    <div class="flex justify-between">
+    <div class="flex justify-between ">
     <!-- left side of body -->
      <div class=" grid ml-[100px]  mt-[70px]">
         <p class="font-black text-5xl font-serif  ">Need Fund for Your <br> Medical Treatment ? </p>
@@ -39,13 +47,13 @@
     </div>
       <!-- div for image -->
      <div class="pr-[150px] ">
-        <img class="mt-[150px]" src="/Crowdfunding /Assets/charity4.png" alt="">
+        <img class="mt-[150px] sm:hidden md:block" src="/Crowdfunding /Assets/charity4.png" alt="">
      </div> 
     </div> 
 </div>
 
 <!-- div for fundraisers -->
- <div class="mt-[100px] grid  grid-cols-3 gap-[50px] ">
+ <div class=" mt-[100px] grid sm:grid-cols-1  md:grid-cols-3 gap-[40px]">
     <!-- Fundraiser 1 -->
      <div class="bg-slate-400 w-[400px] h-[500px] rounded " onclick="window.location.href='./Patient Details.html';" >
         <img  class=" w-[400px] rounded-xl" src="./Assets/patient image.jpeg" alt="image">
@@ -139,6 +147,13 @@
         
 
  </footer>
+    
+</body>
+<script>
+    document.getElementById("menu-btn").addEventListener("click", function() {
+        document.getElementById("menu").classList.toggle("hidden");
+    });
+    </script>
     
 </body>
 </html>

@@ -9,16 +9,28 @@
 </head>
 
 <body>
-    <nav class="w-full h-[90px] bg-slate-400 flex justify-between pl-12">
-        <img src="./Assets/logo.jpg" alt="logo">
-        <div class="text-white font-black text-2xl my-auto">
-        <a class="mr-[50px]" href="HomePage 1 .html">Home</a>
-        <a class="mr-[50px]" href="Fundraising 1.html">Start a Campaign</a>
-        <a class="mr-[50px]" href="How it works.html">How it Works</a>
-        <a class="mr-[50px]" href="AboutUs.html">About Us</a>
-        <a class="mr-[50px]" href="">Login</a>
-       </div>
-</nav>  
+    <nav class="w-full bg-slate-400 px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between">
+        <!-- Logo -->
+        <div class="w-full md:w-auto flex justify-between items-center">
+            <img src="./Assets/logo.jpg" alt="logo" class="h-12">
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-white text-3xl">&#9776;</button>
+        </div>
+    
+        <!-- Navigation Links -->
+        <div id="menu" class="hidden md:flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
+            <a href="HomePage1.html" class="text-white text-lg">Home</a>
+            <a href="Fundraising1.html" class="text-white text-lg">Start a Campaign</a>
+            <a href="HowItWorks.html" class="text-white text-lg">How it Works</a>
+            <a href="AboutUs.html" class="text-white text-lg">About Us</a>
+            <select class="bg-transparent ring ring-white text-black p-2 rounded">
+                <option value="">Profile</option>
+                <option value="">My Fundraiser</option>
+                <option value="">Contact Us</option>
+                <option value="">Logout</option>
+            </select>
+        </div>
+    </nav>
 <!-- main div -->
     <div>
        
@@ -104,4 +116,9 @@
         </div>
     
 </body>
+<script>
+    document.getElementById("menu-btn").addEventListener("click", function() {
+        document.getElementById("menu").classList.toggle("hidden");
+    });
+    </script>
 </html>
