@@ -11,8 +11,8 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 
 ## 🛠️ Technologies Used
 
-- **Frontend:** React,HTML,Tailwind CSS  
-- **Backend & Hosting:**  Node.js
+- **Frontend:** React, HTML, Tailwind CSS  
+- **Backend & Hosting:**  Node.js (Express.js)
 - **Database:** MongoDB   
 
 ## 🚀 Getting Started
@@ -20,4 +20,4 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 ### 1️⃣ Clone the Repository
 ```sh
 git clone git@github.com:AdharvAdharv/Care-Lift.git
-cd carelift
+cd Care-Lift
