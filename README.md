@@ -23,25 +23,16 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 git clone git@github.com:AdharvAdharv/Care-Lift.git
 cd Care-Lift
 
-### 2️⃣ Run with Docker
-```sh
-Using Docker Commands
-🔹 Build the Docker image:
-
+### 2️⃣ Clone the Repository 
+# Using Docker Commands  
+# Build the Docker image  
 docker build -t carelift .
-🔹 Run the container:
 
-sh
-
+# Run the container  
 docker run -p 3000:3000 --env-file .env carelift
-(Make sure your .env file contains the required environment variables.)
 
-Using Docker Compose (Recommended)
-If you have a docker-compose.yml file, run:
+3️⃣ Using Docker Compose (Recommended)
 
-sh
-
+# If you have a docker-compose.yml file, run  
 docker-compose up -d
 (This will automatically set up the frontend, backend, and database.)
-
-
