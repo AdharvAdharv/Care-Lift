@@ -17,11 +17,11 @@ app.use(cors({
 
 app.use(json());
 app.use(cookieParser())
-
+  
 app.use('/',userauth)
 // mongodb
 
-mongoose.connect('mongodb://localhost:27017/Crowdfunding').then(()=>{
+mongoose.connect('mongodb://mongodb:27017/Crowdfunding').then(()=>{
     console.log('MongoDB connected successfully to Crowdfunding');
 })
     .catch((error)=>{
