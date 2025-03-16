@@ -22,11 +22,11 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 ```sh
 git clone git@github.com:AdharvAdharv/Care-Lift.git
 cd Care-Lift
-2️⃣ Run with Docker
+
+### 2️⃣ Run with Docker
+```sh
 Using Docker Commands
 🔹 Build the Docker image:
-
-sh
 
 docker build -t carelift .
 🔹 Run the container:
