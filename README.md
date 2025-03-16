@@ -13,7 +13,8 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 
 - **Frontend:** React, HTML, Tailwind CSS  
 - **Backend & Hosting:**  Node.js (Express.js)
-- **Database:** MongoDB   
+- **Database:** MongoDB
+- **Containerization:** Docker
 
 ## 🚀 Getting Started
 
@@ -21,3 +22,26 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 ```sh
 git clone git@github.com:AdharvAdharv/Care-Lift.git
 cd Care-Lift
+2️⃣ Run with Docker
+Using Docker Commands
+🔹 Build the Docker image:
+
+sh
+
+docker build -t carelift .
+🔹 Run the container:
+
+sh
+
+docker run -p 3000:3000 --env-file .env carelift
+(Make sure your .env file contains the required environment variables.)
+
+Using Docker Compose (Recommended)
+If you have a docker-compose.yml file, run:
+
+sh
+
+docker-compose up -d
+(This will automatically set up the frontend, backend, and database.)
+
+
