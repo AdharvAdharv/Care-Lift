@@ -6,7 +6,7 @@ CareLift is a **charity-based crowdfunding platform** designed to connect donors
 
 - 🎯 **Campaign Pages** – Showcase fundraising campaigns with relevant details.  
 - 📱 **Responsive Design** – Works seamlessly on desktops, tablets, and mobile devices.  
-- 🎨 **Modern UI** – Built with clean and structured HTML and CSS.  
+- 🎨 **Modern UI** – Built with clean and structured React HTML andn Tailwind CSS.  
 - 🚀 **Hosted with Node.js** – Ensuring fast and reliable performance.  
 
 ## 🛠️ Technologies Used
