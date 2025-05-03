@@ -44,7 +44,7 @@ console.log(id,patientName);
 
       if (response.ok) {
         alert('Transaction Completed');
-        navigate('/homepage'); // Redirect after successful contribution
+        navigate(`/patientdetails/${id}`); // Redirect after successful contribution
       } else {
         const data = await response.json();
         alert(`Error: ${data.error || "Transaction failed"}`);

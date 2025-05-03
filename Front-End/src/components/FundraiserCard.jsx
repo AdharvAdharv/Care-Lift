@@ -8,7 +8,7 @@ const FundraiserCard = ({item}) => {
     const navigate= useNavigate();
 
     const handleclick= ()=>{
-        navigate(`/patientdetails/${item.patientId}`)
+        navigate(`/patientdetails/${item.patientId}`)  
     }
 
     const imageSrc = item.image1.startsWith('data:image')
